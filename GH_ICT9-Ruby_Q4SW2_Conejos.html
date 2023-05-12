@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hours Converter</title>
+</head>
+<body bgcolor="#EBF5FB">
+	<h1 style= "color: #FDFEFE; background-color: #1B4F72;">Hours Converter 🕔</h1>
+	<h2 style= "color: #EBF5FB; background-color: #2471A3;">Hours to Seconds</h2>
+	<input type="text" id="id1" placeholder="Hours Value"><br>
+	<button onclick="Seconds()">Convert</button>
+	<p id="seconds"></p>
+
+	<script>
+		function Seconds() {
+			var x = document.getElementById('id1').value;
+			var seconds = x * 3600
+			document.getElementById('seconds').innerHTML = "The answer is " + seconds + " seconds.";
+		}
+	</script><br>
+
+	<h2 style= "color: #EBF5FB; background-color: #2471A3;">Hours to Minutes</h2>
+	<input type="text" id="id2" placeholder="Hours Value"><br>
+	<button onclick="Minutes()">Convert</button>
+	<p id="minutes"></p>
+
+	<script>
+		function Minutes() {
+			var x = document.getElementById('id2').value;
+			var minutes = x * 60
+			document.getElementById('minutes').innerHTML = "The answer is " + minutes + " minutes.";
+		}
+	</script><br>
+
+	<h2 style= "color: #EBF5FB; background-color: #2471A3;">Hours to Days</h2>
+	<input type="text" id="id3" placeholder="Hours Value"><br>
+	<button onclick="Days()">Convert</button>
+	<p id="days"></p>
+
+	<script>
+		function Days() {
+			var x = document.getElementById('id3').value;
+			var days = x * 0.0416667
+			document.getElementById('days').innerHTML = "The answer is " + days + " days.";
+		}
+	</script>
+</body>
+</html>
